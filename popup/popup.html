@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job App Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Job Application Assistant</h2>
+  <form id="profileForm">
+    <label>Name: <input type="text" id="name"></label>
+    <label>Email: <input type="email" id="email"></label>
+    <label>Phone: <input type="text" id="phone"></label>
+    <label>LinkedIn: <input type="text" id="linkedin"></label>
+    <label>Work Experience:</label>
+    <textarea id="workExperience" placeholder="Describe your work experience..."></textarea>
+    <label>Education:</label>
+    <textarea id="education" placeholder="Your degrees and institutions..."></textarea>
+    
+    <!-- Resume Upload -->
+    <label>Resume (PDF/DOCX):</label>
+    <input type="file" id="resumeUpload" accept=".pdf,.docx">
+    
+    <button type="submit">Save Profile</button>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>
